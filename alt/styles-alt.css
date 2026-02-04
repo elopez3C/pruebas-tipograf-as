@@ -1,0 +1,583 @@
+/* Font Face Definitions - Alternative TEST Fonts */
+/* Note: TEST fonts don't include italic variants, browser will synthesize faux italic */
+@font-face {
+  font-family: 'Confi Sans';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF2/ConfiSansTEST-Regular.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF/ConfiSansTEST-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Confi Sans';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF2/ConfiSansTEST-Medium.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF/ConfiSansTEST-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Confi Sans';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF2/ConfiSansTEST-Bold.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Sans TEST/Web Fonts/WOFF/ConfiSansTEST-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Confi Serif';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF2/ConfiSerifTEST-Regular.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF/ConfiSerifTEST-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Confi Serif';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF2/ConfiSerifTEST-Medium.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF/ConfiSerifTEST-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Confi Serif';
+  src: url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF2/ConfiSerifTEST-Bold.woff2') format('woff2'),
+       url('alternative fonts/El Confidencial TEST Fonts/Confi Serif TEST/Web Fonts/WOFF/ConfiSerifTEST-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+  --color-primary: #121212;
+  --color-secondary: #727272;
+  --color-background: #ffffff;
+  --color-placeholder: #d9d9d9;
+  --color-tag-bg: #bfc7ce;
+  --color-divider: #121212;
+
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+
+  --font-sans: 'Confi Sans', sans-serif;
+  --font-serif: 'Confi Serif', serif;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  gap: var(--spacing-24);
+  margin-bottom: 48px;
+}
+
+.row--first {
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.row--first .article--main {
+  width: 760px;
+  flex-shrink: 0;
+}
+
+.row--sections {
+  gap: var(--spacing-24);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.row--sections .section-gran-analisis {
+  width: 760px;
+  flex-shrink: 0;
+}
+
+.row--two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-24);
+  width: 100%;
+}
+
+.section-last .row--two-col {
+  margin-bottom: 0;
+}
+
+/* Labels */
+.label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-4);
+}
+
+.label--section {
+  font-size: 13px;
+  margin-bottom: var(--spacing-16);
+  padding-bottom: var(--spacing-8);
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.label--exclusive {
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--color-tag-bg);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  padding: 2px 6px 3px;
+  border-radius: 2px;
+  margin-bottom: var(--spacing-4);
+}
+
+/* Article Base */
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop/H4 - Default title style */
+.article__title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 110%;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* Desktop/H2 - Large title for main article */
+.article__title--large {
+  font-size: 35px;
+  line-height: 110%;
+}
+
+/* Desktop/H3 - Medium title */
+.article__title--h3 {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+/* Párrafo - Entradilla text */
+.article__excerpt {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 145%;
+  color: var(--color-secondary);
+  margin-top: var(--spacing-12);
+}
+
+.article__excerpt--short {
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: var(--spacing-8);
+}
+
+/* Article Meta */
+.article__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-16);
+}
+
+.author {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  white-space: nowrap;
+}
+
+.separator {
+  width: 1px;
+  height: 12px;
+  background-color: #D9D9D9;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.icon {
+  width: 9px;
+  height: 9px;
+}
+
+.time {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+/* Image Container */
+.article__image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-placeholder);
+}
+
+/* Square image for main article */
+.article__image--square {
+  height: 368px;
+  width: 368px;
+  aspect-ratio: 1 / 1;
+  align-self: stretch;
+}
+
+.article__image--tall {
+  display: flex;
+  height: 552px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  aspect-ratio: 2 / 3;
+}
+
+.photo-credit {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  margin-top: var(--spacing-4);
+  text-align: right;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
+  margin-top: var(--spacing-24);
+}
+
+/* Main Article (text left, image right) */
+.article--main {
+  flex-direction: row;
+  gap: var(--spacing-24);
+  width: 760px;
+  align-items: flex-start;
+}
+
+.article--main .article__content {
+  flex: 1;
+}
+
+.article--main .article__image-wrapper {
+  flex-shrink: 0;
+  width: 368px;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  flex-shrink: 0;
+}
+
+.article--compact {
+  padding-bottom: var(--spacing-16);
+  margin-bottom: var(--spacing-16);
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.article--compact:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article--compact .article__title {
+  font-size: 20px;
+}
+
+.article--compact .article__meta {
+  margin-top: var(--spacing-12);
+}
+
+/* Gran Análisis Section */
+.section-gran-analisis {
+  width: 760px;
+}
+
+.gran-analisis-content {
+  display: flex;
+  gap: var(--spacing-24);
+}
+
+.gran-analisis-articles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+}
+
+.gran-analisis-image {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gran-analisis-image .article__image--tall {
+  height: 552px;
+  aspect-ratio: 2 / 3;
+  width: auto;
+}
+
+/* Firmas Section */
+.section-firmas {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.firmas-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.firma {
+  display: flex;
+  gap: var(--spacing-12);
+  align-items: flex-start;
+  padding: var(--spacing-16) 0;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.firma:first-child {
+  padding-top: 0;
+}
+
+.firma:last-child {
+  border-bottom: none;
+}
+
+.firma__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-placeholder);
+  flex-shrink: 0;
+}
+
+.firma__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Desktop/H4 Opinión - Firma title */
+.firma__title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.firma__content .author {
+  margin-top: var(--spacing-4);
+}
+
+/* Last Section Container */
+.section-last {
+  display: flex;
+  width: 760px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-24);
+}
+
+/* Article with Image Left */
+.article--image-left {
+  flex-direction: row;
+  gap: var(--spacing-24);
+  width: 100%;
+  align-items: flex-start;
+  padding-bottom: var(--spacing-24);
+  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;
+  padding-top: 48px;
+}
+
+.article--image-left .article__image-wrapper {
+  flex-shrink: 0;
+}
+
+/* Image 4:3 aspect ratio */
+.article__image--4-3 {
+  display: flex;
+  height: 276px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  aspect-ratio: 4 / 3;
+}
+
+.article--image-left .article__content {
+  flex: 1;
+}
+
+/* Text Only Article */
+.article--text-only {
+  width: 100%;
+}
+
+/* Bottom Articles */
+.article--bottom {
+  width: 100%;
+}
+
+/* Bolillo */
+.bolillo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-16);
+}
+
+.bolillo__bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.bolillo__text {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-primary);
+  line-height: 1.45;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    padding: 60px 24px;
+  }
+
+  .row--sections {
+    flex-direction: column;
+  }
+
+  .section-firmas {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row--first {
+    flex-direction: column;
+  }
+
+  .article--main {
+    flex-direction: column;
+  }
+
+  .article--main .article__content,
+  .article--main .article__image-wrapper {
+    max-width: 100%;
+  }
+
+  .article--image-left {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .article--image-left .article__image-wrapper {
+    width: 100%;
+  }
+
+  .gran-analisis-content {
+    flex-direction: column;
+  }
+
+  .gran-analisis-image {
+    width: 100%;
+  }
+
+  .gran-analisis-image .article__image--tall {
+    aspect-ratio: 16 / 9;
+  }
+
+  .row--two-col {
+    grid-template-columns: 1fr;
+  }
+}
