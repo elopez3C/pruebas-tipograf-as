@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículos - Diseño Figma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Row 1: Main article with image right + Sidebar articles -->
+    <div class="row row--first">
+      <!-- Main Article (text left, image right) -->
+      <article class="article article--main">
+        <div class="article__content">
+          <span class="label">Análisis</span>
+          <h2 class="article__title article__title--large">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+          <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+          <!-- Bolillo inside main article -->
+          <div class="bolillo">
+            <span class="bolillo__bullet"></span>
+            <span class="bolillo__text">Esto es un bolillo normal</span>
+          </div>
+        </div>
+        <div class="article__image-wrapper">
+          <div class="article__image article__image--square"></div>
+          <span class="photo-credit">Firma foto</span>
+        </div>
+      </article>
+
+      <!-- Sidebar Articles (compact, no excerpt) -->
+      <aside class="sidebar">
+        <article class="article article--compact">
+          <h3 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h3>
+          <p class="article__excerpt article__excerpt--short">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem</p>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+        </article>
+
+        <article class="article article--compact">
+          <h3 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h3>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+        </article>
+
+        <article class="article article--compact">
+          <h3 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h3>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+        </article>
+      </aside>
+    </div>
+
+    <!-- Row 2: Gran Análisis + Firmas Section -->
+    <div class="row row--sections">
+      <!-- Gran Análisis Section -->
+      <section class="section-gran-analisis">
+        <span class="label label--section">Gran Análisis</span>
+
+        <div class="gran-analisis-content">
+          <div class="gran-analisis-articles">
+            <article class="article article--text-only">
+              <h2 class="article__title article__title--h3">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+              <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+              <div class="article__meta">
+                <span class="author">nombre apellidos</span>
+                <span class="separator"></span>
+                <span class="comments">
+                  <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+                  </svg>
+                  15
+                </span>
+                <span class="separator"></span>
+                <span class="time">12:43</span>
+              </div>
+              <div class="divider"></div>
+            </article>
+
+            <article class="article article--text-only">
+              <h2 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+              <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+              <div class="article__meta">
+                <span class="author">nombre apellidos</span>
+                <span class="separator"></span>
+                <span class="comments">
+                  <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+                  </svg>
+                  15
+                </span>
+                <span class="separator"></span>
+                <span class="time">12:43</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="gran-analisis-image">
+            <div class="article__image article__image--tall"></div>
+            <span class="photo-credit">Firma foto</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Firmas Section -->
+      <section class="section-firmas">
+        <span class="label label--section">Firmas</span>
+
+        <div class="firmas-list">
+          <article class="firma">
+            <div class="firma__avatar"></div>
+            <div class="firma__content">
+              <span class="label label--exclusive">EC Exclusivo</span>
+              <h3 class="firma__title">Lorem ipsum dolor sit amet</h3>
+              <span class="author">nombre apellidos</span>
+            </div>
+          </article>
+
+          <article class="firma">
+            <div class="firma__avatar"></div>
+            <div class="firma__content">
+              <span class="label label--exclusive">EC Exclusivo</span>
+              <h3 class="firma__title">Lorem ipsum dolor sit amet</h3>
+              <span class="author">nombre apellidos</span>
+            </div>
+          </article>
+
+          <article class="firma">
+            <div class="firma__avatar"></div>
+            <div class="firma__content">
+              <span class="label label--exclusive">EC Exclusivo</span>
+              <h3 class="firma__title">Lorem ipsum dolor sit amet</h3>
+              <span class="author">nombre apellidos</span>
+            </div>
+          </article>
+
+          <article class="firma">
+            <div class="firma__avatar"></div>
+            <div class="firma__content">
+              <span class="label label--exclusive">EC Exclusivo</span>
+              <h3 class="firma__title">Lorem ipsum dolor sit amet</h3>
+              <span class="author">nombre apellidos</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Last Section: Article with image left + Two column articles -->
+    <section class="section-last">
+      <article class="article article--image-left">
+        <div class="article__image-wrapper">
+          <div class="article__image article__image--4-3"></div>
+          <span class="photo-credit">Firma foto</span>
+        </div>
+        <div class="article__content">
+          <span class="label">Análisis</span>
+          <h2 class="article__title article__title--h3">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+          <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Two column articles -->
+      <div class="row row--two-col">
+        <article class="article article--bottom">
+          <span class="label">Análisis</span>
+          <h2 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+          <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+          <div class="divider"></div>
+        </article>
+
+        <article class="article article--bottom">
+          <span class="label">Análisis</span>
+          <h2 class="article__title">Lorem ipsum dolor sit amet consectetur. Tellus accumsan.</h2>
+          <p class="article__excerpt">Lorem ipsum dolor sit amet consectetur. Bibendum vitae at cras accumsan dictumst. Elit lorem interdum viverra sit lectus lacus lectus mauris ut.</p>
+          <div class="article__meta">
+            <span class="author">nombre apellidos</span>
+            <span class="separator"></span>
+            <span class="comments">
+              <svg class="icon" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 0C2.015 0 0 1.79 0 4c0 1.05.45 2.01 1.2 2.76L.45 8.55c-.15.18-.03.45.2.45h3.85c2.485 0 4.5-1.79 4.5-4s-2.015-4-4.5-4z" fill="#727272"/>
+              </svg>
+              15
+            </span>
+            <span class="separator"></span>
+            <span class="time">12:43</span>
+          </div>
+          <div class="divider"></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

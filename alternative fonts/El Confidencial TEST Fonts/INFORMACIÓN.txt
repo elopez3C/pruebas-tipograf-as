@@ -1,0 +1,10 @@
+NOTAS sobre las fuentes TEST:
+
+– Juego de caracteres limitado (A–Z, a–z, 0–9 y puntuación básica).
+– Espaciado y kerning sin finalizar.
+– Optimización para pantalla aún no aplicada.
+
+RECOMENDACIONES para el uso de las fuentes TEST:
+
+– Instalar y testear únicamente en un número reducido de equipos y dentro de un grupo cerrado de personas.
+– Desinstalar y eliminar las fuentes una vez finalizadas todas las pruebas.
